@@ -1,0 +1,43 @@
+@import "src/app/styles/variables";
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+
+  label {
+    margin-bottom: 5px;
+  }
+
+  input {
+    cursor: pointer;
+  }
+
+  .output {
+    position: absolute;
+    background: $neutral8;
+    padding: 8px;
+    border-radius: 8px;
+    z-index: 999;
+    top: -20px;
+    white-space: nowrap;
+    left: -50%;
+    transform: translateX(-50%);
+
+    &:after {
+      content: '';
+      position: absolute;
+      height: 12px;
+      width: 12px;
+      z-index: -1;
+      background: $neutral8;
+      left: 50%;
+      bottom: -3px;
+      transform: translateX(-50%) rotate(45deg);
+      border-radius: 3px;
+    }
+  }
+
+  input:focus {
+    cursor: pointer;
+  }
+};

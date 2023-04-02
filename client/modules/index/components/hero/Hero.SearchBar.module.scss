@@ -1,0 +1,58 @@
+@import "../../../../src/app/styles/variables";
+
+.search {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  transform: translateY(50%);
+  z-index: 1000;
+}
+
+.searchContainer {
+  background: $neutral1;
+  background: $neutralGlass2;
+  border-radius: 24px;
+  padding: 40px;
+  position: relative;
+  border: 1px solid $neutral3;
+}
+
+.searchInputWrapper {
+  background: $neutral1;
+  height: 92px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 40px;
+  padding-right: 20px;
+  border-radius: 20px;
+}
+
+.searchInputWrapperLeft {
+  display: flex;
+  align-items: center;
+  flex: 1;
+}
+
+.searchInputWrapperRight {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.clearIcon {
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.input {
+  outline: none;
+  border: none;
+  font-size: 24px;
+  font-weight: 600;
+  color: white;
+  background: transparent;
+  margin-left: 12px;
+  width: 100%;
+}

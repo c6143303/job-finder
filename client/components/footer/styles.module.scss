@@ -1,0 +1,46 @@
+.footer {
+  margin-top: 80px;
+}
+.footerHead {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-bottom: 48px;
+}
+.logo {
+  flex: 0 1 256px;
+}
+.nav {
+  flex: 1 1;
+  display: flex;
+}
+.navItem {
+  flex: 1 1 160px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.form {
+  flex: 0 1 256px;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.formItem {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 100%;
+
+  div {
+    width: 100%;
+  }
+  .formButton {
+    position: absolute;
+    right: 8px;
+  }
+}
+.footerBottom {
+  padding-top: 24px;
+  padding-bottom: 24px;
+}

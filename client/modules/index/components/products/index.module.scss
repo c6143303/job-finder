@@ -1,0 +1,39 @@
+.products {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.modal {
+  flex: 1;
+}
+
+.filter {
+  flex-basis: 256px;
+  display: flex;
+  gap: 48px;
+  flex-direction: column;
+  margin-right: 78px;
+}
+
+.loader {
+  margin-top: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.productContainer {
+  flex: 1;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 68px;
+}
+
+.dropdown {
+  max-width: 256px;
+}

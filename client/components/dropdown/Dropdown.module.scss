@@ -1,0 +1,87 @@
+@import "src/app/styles/variables";
+
+.dropdown {
+  width: 100%;
+  border-radius: 12px;
+  height: 48px;
+  border: 2px solid $neutral3;
+  position: relative;
+  cursor: pointer;
+  z-index: 999;
+
+  .dropdownBody {
+    padding: 8px;
+    background: $neutral3;
+    border-radius: 8px;
+    position: absolute;
+    left: 0;
+    top: calc(100% + 10px);
+    width: 100%;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.15s ease;
+  }
+
+  p {
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 500;
+    color: white;
+  }
+
+  &.open {
+    .dropdownBody {
+      visibility: visible;
+      opacity: 1;
+    }
+
+    & {
+      border: 2px solid $primary1;
+    }
+  }
+}
+
+.dropdownHead {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  padding-right: 8px;
+  padding-left: 16px;
+  justify-content: space-between;
+
+}
+
+.dropdownIcon {
+  height: 32px;
+  width: 32px;
+  border-radius: 50%;
+  border: 2px solid $neutral3;
+  background: url("/images/arrowDown.svg") no-repeat;
+  background-position: 50% 50%;
+}
+
+.dropdownItem {
+  height: 40px;
+  display: flex;
+  align-items: center;
+  padding: 8px;
+
+  &:hover {
+    background: $neutral7;
+    border-radius: 8px;
+
+    p {
+      pointer-events: none;
+      color: $neutral1;
+    }
+  }
+
+}
+
+.active {
+  background: $neutral7;
+  border-radius: 8px;
+  p {
+    color: $neutral1;
+  }
+}

@@ -1,0 +1,103 @@
+.navbar {
+  margin-top: 24px;
+  margin-bottom: 24px;
+}
+.navbarContainer {
+  display: flex;
+  justify-content: space-between;
+  height: 48px;
+}
+
+.mr24 {
+  margin-right: 24px;
+}
+
+.mr12 {
+  margin-right: 12px;
+}
+
+.logo {
+  cursor: pointer;
+}
+.mrl40 {
+  margin-right: 40px;
+  margin-left: 40px;
+}
+
+.left {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.right {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon {
+  height: 24px;
+  width: 24px;
+}
+
+.dropdown {
+  position: relative;
+  cursor: pointer;
+
+  &:hover .bodyContainer {
+    opacity: 1;
+    transition: 0.2s;
+    transform: translateY(0px);
+    display: block;
+  }
+}
+
+.body {
+  position: absolute;
+  top: 100%;
+  left: 0px;
+  z-index: 999;
+}
+.bodyContainer {
+  margin-top: 10px;
+  background: black;
+  opacity: 0;
+  transform: translateY(10px);
+  padding: 24px 24px;
+  border-radius: 16px;
+  min-width: 200px;
+  display: none;
+}
+
+.head {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  & > p {
+    margin-right: 10px;
+  }
+}
+
+.icon {
+  background-image: url("/images/arrowDown.svg");
+  background-repeat: no-repeat;
+  height: 9px;
+  margin-top: 5px;
+}
+
+.item {
+  height: 24px;
+}
+
+.avatar {
+  border-radius: 50%;
+  overflow: hidden;
+  height: 40px;
+  width: 40px;
+  cursor: pointer;
+  img {
+    object-fit: cover;
+  }
+}

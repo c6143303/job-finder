@@ -1,0 +1,36 @@
+@import "../../../src/app/styles/variables";
+.modal {
+  gap: 24px;
+  display: flex;
+  flex-direction: column;
+}
+
+.checkboxWrapper {
+  * {
+    pointer-events: none;
+  }
+  display: flex;
+  align-items: center;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.button {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  img {
+    margin-right: 8px;
+    height: 20px;
+    width: 20px;
+  }
+
+  p {
+    color: $neutral4;
+    font-weight: 500;
+  }
+}

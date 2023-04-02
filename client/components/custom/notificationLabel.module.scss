@@ -1,0 +1,25 @@
+@import "../../src/app/styles/variables";
+.label {
+  font-size: 10px;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: $neutral8;
+  padding: 8px 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 16px;
+}
+
+.approved {
+  @extend .label;
+  background: $primary4;
+}
+.process {
+  @extend .label;
+  background: $secondary4;
+}
+.canceled {
+  @extend .label;
+  background: $primary5;
+}

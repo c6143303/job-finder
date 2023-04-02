@@ -1,0 +1,33 @@
+@import "../../src/app/styles/variables";
+.subnav {
+  display: flex;
+  gap: 10px;
+}
+
+.button {
+  padding: 6px 12px;
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 500;
+  background: transparent;
+  color: $neutral8;
+  &:hover {
+    background: $primary1;
+    color: white;
+  }
+}
+
+.activeButton {
+  @extend .button;
+  background: $neutral3;
+  color: white;
+
+  &:hover {
+    background: $neutral3;
+  }
+}

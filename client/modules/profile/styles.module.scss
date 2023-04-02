@@ -1,0 +1,74 @@
+@import "src/app/styles/variables";
+.section {
+  margin-bottom: 138px;
+}
+.head {
+
+}
+.body {
+  display: flex;
+  align-items: flex-start;
+}
+.sidebar {
+  background: $neutral1;
+  padding: 32px;
+  border: 1px solid $neutral3;
+  border-radius: 16px;
+  flex: 0 0 256px;
+  margin-right: 64px;
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+  text-align: center;
+  position: relative;
+  top: -100px;
+}
+.profile {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  align-items: center;
+
+  .profileAvatar {
+    height: 160px;
+    width: 160px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+}
+.profileListItem {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .dash {
+    margin-right: 5px;
+    margin-left: 5px;
+  }
+}
+.social {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+.head {
+  height: 400px;
+  background: url('/images/galaxyCover.jpg');
+  border-radius: 24px;
+}
+.contentWrapper {
+  padding-top: 80px;
+  flex: 1;
+
+  .nav {
+    display: flex;
+    margin-bottom: 64px;
+    gap: 12px;
+  }
+
+  .products {
+    display: flex;
+    gap: 24px;
+    flex-direction: column;
+  }
+}

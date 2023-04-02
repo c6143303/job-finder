@@ -1,0 +1,72 @@
+$neutral4: #777E90;
+$neutral1: #141416;
+$neutral2: #23262F;
+$neutral3: #353945;
+$neutral3: #353945;
+$neutral5: #B1B5C3;
+$neutral7: #F4F5F6;
+$neutral8: #FCFCFD;
+$primary1: #3B71FE;
+$primary3: #92A5EF;
+$primary4: #58C27D;
+$primary5: #EB5757;
+$secondary4: #FA8F54;
+$neutralGlass2: linear-gradient(92.98deg, #23262F 3.54%, rgba(35, 38, 47, 0.7) 93.38%);
+
+.primary1 {
+  color: $primary1;
+}
+
+.neutral8 {
+  color: #FCFCFD;
+}
+
+.neutral5 {
+  color: $neutral5;
+}
+
+.neutral4 {
+  color: $neutral4;
+}
+
+.flex-between {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.align-self-start {
+  align-self: flex-start;
+}
+.flex-center {
+  display: flex;
+  align-items: center;
+}
+.mb-24 {
+  margin-bottom: 24px;
+}
+
+.mb-16 {
+  margin-bottom: 16px;
+}
+
+.mb-48 {
+  margin-bottom: 48px;
+}
+
+.mb-4 {
+  margin-bottom: 4px;
+}
+
+.mb-10 {
+  margin-bottom: 10px;
+}
+
+.mtb-32 {
+  margin-top: 32px;
+  margin-bottom: 32px;
+}
+
+.mb-32 {
+  margin-bottom: 32px;
+}

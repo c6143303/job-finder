@@ -1,0 +1,11 @@
+@import "/src/app/styles/variables";
+.modal {
+  color: $primary3;
+  font-size: 12px;
+  background: $neutral8;
+  padding: 5px 16px;
+  border-radius: 16px;
+  line-height: 20px;
+  font-weight: 600;
+  margin-top: 6px;
+}

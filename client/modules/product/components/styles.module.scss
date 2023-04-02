@@ -1,0 +1,99 @@
+@import "/src/app/styles/variables";
+
+.layout {
+  margin-bottom: 138px;
+}
+
+.detail {
+  display: flex;
+  align-items: flex-start;
+}
+
+.content {
+  margin-right: 48px;
+  flex-grow: 1;
+  display: flex;
+  gap: 64px;
+  flex-direction: column;
+}
+
+.contentItem {
+}
+
+.navbar {
+  margin-bottom: 80px;
+}
+
+.announce {
+  border-radius: 24px;
+  background: $neutral2;
+  padding: 56px;
+  flex: 1 0 448px;
+}
+
+.announceText {
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+
+.navigation {
+  height: 72px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.titleWrapper {
+  display: flex;
+}
+
+.header {
+  margin-bottom: 80px;
+}
+
+.jobInfo {
+  display: flex;
+  flex-wrap: wrap;
+
+  .jobInfoLeft {
+    margin-right: 32px;
+    flex: 1 1 500px;
+  }
+
+  .jobInfoCard {
+    display: flex;
+  }
+
+  .jobInfoImage {
+    margin-right: 26px;
+    height: 80px;
+    width: 80px;
+    object-fit: cover;
+    background: black;
+    border-radius: 6px;
+  }
+
+  .jobInfoTitles {
+
+  }
+
+  .jobInfoRight {
+    flex-shrink: 0;
+  }
+
+  .jobInfoBreads {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+}
+
+.jobInfoBreadItem {
+  margin-right: 20px;
+  display: flex;
+  align-items: center;
+
+  img {
+    margin-right: 6px;
+  }
+}

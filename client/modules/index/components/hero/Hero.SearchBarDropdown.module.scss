@@ -1,0 +1,31 @@
+@import "../../../../src/app/styles/variables";
+.dropdown {
+  position: absolute;
+  top: calc(100% + 20px);
+  left: 0;
+  border-radius: 16px;
+  background: $neutral3;
+  width: 100%;
+  padding: 8px;
+}
+.dropdownItem {
+  height: 56px;
+  display: flex;
+  align-items: center;
+  padding-left: 8px;
+  border-radius: 8px;
+  cursor: pointer;
+
+  &:hover {
+    background: $neutral1;
+  }
+}
+.dropdownIcon {
+  height: 32px;
+  width: 32px;
+  border: 2px solid $neutral3;
+  border-radius: 50%;
+  background: url("/images/dropdownIcon.svg") no-repeat, $neutral2;
+  margin-right: 8px;
+  background-position: 50% 50%;
+}

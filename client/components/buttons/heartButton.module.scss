@@ -1,0 +1,18 @@
+@import "src/app/styles/variables";
+.button {
+  height: 50px;
+  width: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  cursor: pointer;
+  border: none;
+  background: url("/images/heart-border.svg") no-repeat 50% 50%, $neutral2;
+  transition: 0.150s ease;
+}
+
+.buttonActive {
+  @extend .button;
+  background: url("/images/heart-filled.svg") no-repeat 50% 50%, $neutral2;
+}

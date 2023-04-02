@@ -1,0 +1,97 @@
+@import "/src/app/styles/variables";
+
+.container {
+  height: 180px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 16px;
+  border: 2px solid $neutral3;
+  cursor: pointer;
+
+  & > img {
+    margin-bottom: 10px;
+  }
+
+  &:hover {
+    border: 1px dashed $primary1;
+  }
+}
+
+
+.information {
+  margin-top: 12px;
+  cursor: pointer;
+
+  p {
+    transition: 0.2s ease;
+  }
+
+  .informationHead {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .uploadImg {
+    height: 20px;
+    width: 20px;
+    background: url(/images/uploadFile.svg) no-repeat 50% 50% / 16px 16px;
+  }
+
+  .informationContent {
+    display: flex;
+    align-items: center;
+
+    & > p {
+      margin-left: 6px;
+    }
+  }
+
+  .informationRemover {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 2px;
+    height: 20px;
+    width: 20px;
+    background: url(/images/file.svg) no-repeat 50% 50% / 16px 16px;
+  }
+
+  .loaderWrapper {
+    opacity: 1;
+    margin-top: 5px;
+    position: relative;
+    height: 2px;
+    background: $neutral3;
+  }
+
+  @keyframes loading {
+    from {width: 0%}
+    to {width: 100%}
+  }
+
+  .loader {
+    position: absolute;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    background: $primary3;
+  }
+
+  .active .loader {
+    animation: loading 0.3s ease-in-out forwards 2s;
+  }
+
+  &:hover {
+    background: $neutral2;
+    border-radius: 2px;
+  }
+
+  &.error {
+    .loader {
+      background: $primary5;
+    }
+  }
+}

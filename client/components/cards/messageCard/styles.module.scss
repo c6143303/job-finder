@@ -1,0 +1,24 @@
+@import "/src/app/styles/variables";
+.card {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  padding: 32px;
+  border-radius: 16px;
+  border: 1px solid $neutral3;
+}
+
+.head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.content {
+
+}
+.info {
+
+}
+.bottom {
+
+}

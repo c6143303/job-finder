@@ -1,0 +1,18 @@
+@import "./src/app/styles/variables";
+.input {
+  padding: 8px 16px;
+  border-radius: 12px;
+  background: $neutral2;
+  cursor: pointer;
+}
+.inputContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.info {
+
+}
+.icon {
+
+}

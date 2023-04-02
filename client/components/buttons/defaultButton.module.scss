@@ -1,0 +1,78 @@
+@import "./src/app/styles/variables";
+
+.left {
+  background: black;
+  flex-direction: row-reverse;
+
+  img {
+    margin-right: 15px;
+    margin-left: 0px !important;
+  }
+}
+.right {
+  background: black;
+
+  img {
+    margin-left: 15px !important;
+  }
+}
+
+.button {
+  border: none;
+  border-radius: 32px;
+  cursor: pointer;
+  color: white;
+}
+
+.border {
+  border: 2px solid $neutral4;
+  color: white;
+  background: transparent;
+  @extend .button;
+}
+
+.filled {
+  background: $primary1;
+  @extend .button;
+}
+
+.filledIcon {
+  @extend .button;
+  background: $primary1;
+  display: flex;
+  align-items: center;
+}
+
+.borderIcon {
+  @extend .filled;
+  background: transparent;
+  border: 2px solid $neutral3;
+  display: flex;
+}
+
+.borderNeutral {
+  @extend .filled;
+  background: transparent;
+  border: 2px solid $neutral3;
+}
+
+.transparent {
+  @extend .filled;
+  background: transparent;
+  border: none;
+}
+.small {
+  padding: 12px 16px;
+}
+
+.medium {
+  padding: 16px 24px;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.borderBlue {
+  @extend .filled;
+  background: transparent;
+  border: 2px solid $primary1;
+}

@@ -1,0 +1,8 @@
+
+.formItem {
+  flex: 1;
+
+  & > p {
+    margin-bottom: 12px;
+  }
+}

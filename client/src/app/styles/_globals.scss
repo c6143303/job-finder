@@ -1,0 +1,141 @@
+@import "variables";
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  color: $neutral4;
+  font-size: 14px;
+  line-height: 20px;
+  background: $neutral1;
+  // min-height: 100vh;
+}
+
+.blockScroll {
+  overflow: hidden;
+}
+
+.divider {
+  border-right: 1px solid $neutral3;
+  height: 100%;
+}
+
+.divider-hor {
+  border-top: 1px solid $neutral3;
+  width: 100%;
+  height: 1px;
+}
+
+.container {
+  max-width: 1150px;
+  margin: auto;
+  padding: 0px 80px;
+}
+
+.sm-container {
+  max-width: 710px;
+  margin: auto;
+  padding: 0px 15px;
+}
+
+.largeContainer {
+  max-width: 1310px;
+  margin: auto;
+  padding: 0px 15px;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:focus {
+  transition: background-color 600000s 0s, color 600000s 0s;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.headline1 {
+  font-size: 64px;
+  line-height: 64px;
+  font-weight: 700;
+}
+
+.headline2 {
+  font-size: 48px;
+  line-height: 56px;
+  font-weight: 700;
+}
+
+.headline3 {
+  font-size: 40px;
+  line-height: 48px;
+  font-weight: 700;
+}
+
+.headline4 {
+  font-size: 32px;
+  line-height: 40px;
+  font-weight: 700;
+}
+
+.headline5 {
+  font-size: 24px;
+  line-height: 32px;
+  font-weight: 400;
+}
+
+.hairline2 {
+  font-size: 12px;
+  line-height: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.body1 {
+  font-size: 24px;
+  line-height: 32px;
+  font-weight: 500;
+}
+
+.body1body {
+  font-size: 24px;
+  line-height: 32px;
+  font-weight: 700;
+}
+
+.body2 {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 300;
+}
+
+.caption2 {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 20px;
+}
+
+.captionBold {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 24px;
+}
+
+.button1 {
+  font-weight: 700;
+  line-height: 16px;
+  font-size: 16px;
+}
+
+.button2 {
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 500;
+}
+
+.react-calendar__tile--active {
+  background: $neutral5;
+}
